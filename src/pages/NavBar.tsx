@@ -22,12 +22,18 @@ const Navbar = () => {
           bg-transparent text-green-800 dark:text-green-500"
         >
           <li>
-            <Link
+            {/* <Link
               to="/"
               className="py-2 px-3 hover:text-green-600 dark:hover:text-green-400"
             >
               Home
-            </Link>
+            </Link> */}
+            <a
+              href="/"
+              className="flex items-center  space-x-3 rtl:space-x-reverse"
+            >
+              Home
+            </a>
           </li>
           <li>
             <Link
