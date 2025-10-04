@@ -184,35 +184,7 @@ const Index = () => {
                 </div>
 
                 {/* Call to Action */}
-                <div className="pt-10 text-center">
-                  <Card className="max-w-4xl mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
-                    <CardContent className="p-8 pb-0">
-                      <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-                        Why This?
-                      </h2>
-                      <p className="text-muted-foreground mb-6 text-justify">
-                        We are building this website to raise awareness about
-                        climate change by focusing on Glacier, one of the
-                        clearest indicators of global warming. Glaciers are
-                        melting rapidly, affecting sea levels, water resources,
-                        and millions of lives worldwide. This platform makes
-                        complex climate data simple and visual, helping
-                        students, researchers, and the public understand the
-                        impacts while preserving a record for future
-                        generations. It aims to educate, engage, and inspire
-                        action toward protecting our planet.
-                      </p>
-                      <div className=" gap-x-5 flex justify-center  text-primary">
-                        <Mountain className="w-5 h-5" />
-                        <span className="font-medium">
-                          Some Pictures Of Glacier Lakes Outbrust And Its Impact
-                        </span>
-                      </div>
-                      <img src={indxdtl} className="w-auto h-auto  pt-6" />
-                      <label htmlFor="">Source: The Kathmandu Post</label>
-                    </CardContent>
-                  </Card>
-                </div>
+                <div className="pt-10 text-center"></div>
               </div>
 
               <div className=" text-center pb-10">

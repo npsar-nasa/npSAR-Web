@@ -36,6 +36,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/news"
+              className="py-2 px-3 hover:text-green-600 dark:hover:text-green-400"
+            >
+              News
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/quiz"
               className="py-2 px-3 hover:text-green-600 dark:hover:text-green-400"
             >

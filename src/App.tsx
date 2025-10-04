@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Indexx from "./pages/Indexx";
 import About from "./pages/about";
+import News from "./pages/News";
 
 const App = () => (
   <TooltipProvider>
@@ -18,6 +19,7 @@ const App = () => (
         <Route path="*" element={<NotFound />} />
         <Route path="/quiz" element={<Indexx></Indexx>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/news" element={<News></News>}></Route>
       </Routes>
     </BrowserRouter>
   </TooltipProvider>
