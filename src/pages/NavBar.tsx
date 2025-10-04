@@ -12,7 +12,7 @@ const Navbar = () => {
         >
           <Mountain color="#129900" />
           <span className="self-center text-xl  text-green-800 font-semibold whitespace-nowrap dark:text-white">
-            Nepal's Glacier Lake
+            Nepal's Glacier Lake.
           </span>
         </a>
 
