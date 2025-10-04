@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import Navbar from "@/pages/NavBar";
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -10,12 +11,13 @@ export const WelcomeScreen = ({ onStart }: WelcomeScreenProps) => {
   const Navigate = useNavigate();
   return (
     <div className="">
-      <button
+      {/* <button
         className=" bg-green-800 border-green-800 m-4 hover:bg-green-950 rounded-sm  px-4 py-1 text-white"
         onClick={() => Navigate("/")}
       >
         Home
-      </button>
+      </button> */}
+      <Navbar></Navbar>
 
       <div className="min-h-[90vh] bg-quiz-bg flex items-center justify-center p-4">
         <Card className="w-full max-w-md mx-auto shadow-xl border-2 border-border">

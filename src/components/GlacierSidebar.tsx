@@ -175,7 +175,7 @@ export const GlacierSidebar: React.FC<GlacierSidebarProps> = ({
         )}
 
         {/* // for back to home button */}
-        <div
+        {/* <div
           className={`${
             isHome ? "hiden" : "block"
           } flex relative justify-center pt-3 hover:cursor-pointer`}
@@ -196,7 +196,7 @@ export const GlacierSidebar: React.FC<GlacierSidebarProps> = ({
           >
             About
           </button>
-        </div>
+        </div> */}
       </div>
       {/* //mapping thorugh region and then glacier */}
       <SidebarContent className="px-2">

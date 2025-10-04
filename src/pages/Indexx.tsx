@@ -4,6 +4,7 @@ import { QuizCard } from "@/components/QuizCard";
 import { ResultsScreen } from "@/components/ResultsScreen";
 import { quizQuestions } from "@/data/quizData";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./NavBar";
 
 type QuizState = "welcome" | "quiz" | "results";
 
@@ -71,12 +72,13 @@ const Indexx = () => {
 
   return (
     <div>
-      <button
+      {/* <button
         className=" bg-green-800 m-4 border-green-800 hover:bg-green-950 rounded-sm px-4 py-1 text-white"
         onClick={() => Navigate("/")}
       >
         Home
-      </button>
+      </button> */}
+      <Navbar></Navbar>
       <div className="min-h-[90vh] bg-quiz-bg flex items-center justify-center p-4">
         <QuizCard
           question={quizQuestions[currentQuestionIndex]}

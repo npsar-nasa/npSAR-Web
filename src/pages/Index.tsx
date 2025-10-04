@@ -11,7 +11,8 @@ import { useGlaciers } from "../hooks/usedat";
 import indxdtl from "../assets/indexdetail.png";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Navbar from "./NavBar";
 
 type Glacier = {
   area: number;
@@ -26,6 +27,7 @@ type Glacier = {
     url_s: string;
     year: number;
     description: string;
+    area: number;
   }[];
   id: string;
   name: string;
@@ -57,6 +59,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar></Navbar>
       <SidebarProvider>
         <div className="flex min-h-screen w-full ">
           <GlacierSidebar
