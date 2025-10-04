@@ -8,7 +8,7 @@ const Navbar = () => {
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Mountain color="#129900" />
           <span className="self-center text-2xl text-green-800 font-semibold whitespace-nowrap dark:text-white">
-            Nepal's GLacier Lake
+            Nepal's Glacier Lake
           </span>
         </a>
 
