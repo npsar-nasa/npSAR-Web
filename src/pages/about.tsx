@@ -59,7 +59,7 @@ const About = () => {
               is reflected back after the signals interact with Earth's surface.
               Your challenge is to download multi-frequency or
               multi-polarization SAR data for an interesting study area of your
-              choice –e.g., your hometown, a tropical wetland, ice sheet, forest
+              choice e.g., your hometown, a tropical wetland, ice sheet, forest
               wildfire, flooded neighborhood, volcano eruption, etc.—and use
               that data to develop hypotheses about the physical drivers
               operating there.
@@ -137,7 +137,7 @@ const About = () => {
               Annotated glacial lake boundaries manually in QGIS to create
               segmentation masks. Evaluated between generalist vs. specialist
               model approaches — opted for the latter for higher accuracy per
-              lake. Model Training Created ~250–300 image-mask pairs (one per
+              lake. Model Training Created ~ 250–300 image-mask pairs (one per
               lake). Performed data augmentation and batch loading for training
               efficiency. Trained a CNN model using EfficientNet-B2 backbone
               (10M parameters) pre-trained on ImageNet. Achieved strong

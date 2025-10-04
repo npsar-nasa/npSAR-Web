@@ -57,7 +57,7 @@ You are a glacier and climate info bot.
 
     try {
       const res = await fetch(
-        "https://himalayan-ice-chronicles-5.onrender.com/generate",
+        "https://himalayan-ice-chronicles-try.onrender.com/generate",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
