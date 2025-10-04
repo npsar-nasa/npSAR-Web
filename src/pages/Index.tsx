@@ -206,12 +206,7 @@ const Index = () => {
                       year-by-year slider (2015–2025), showing model outputs and
                       highlighting temporal changes in lake boundaries.
                     </p>
-                    <div className=" gap-x-5 flex justify-center  text-primary">
-                      <Mountain className="w-5 h-5" />
-                      <span className="font-medium">
-                        Some Pictures Of Glacier Lakes Outbrust And Its Impact
-                      </span>
-                    </div>
+                    <div className=" gap-x-5 flex justify-center  text-primary"></div>
                   </CardContent>
                 </Card>
               </div>
@@ -234,12 +229,7 @@ const Index = () => {
                       research, and inspire collective action to protect our
                       environment for future generations.
                     </p>
-                    <div className=" gap-x-5 flex justify-center  text-primary">
-                      <Mountain className="w-5 h-5" />
-                      <span className="font-medium">
-                        Some Pictures Of Glacier Lakes Outbrust And Its Impact
-                      </span>
-                    </div>
+                    <div className=" gap-x-5 flex justify-center  text-primary"></div>
                   </CardContent>
                 </Card>
               </div>
@@ -278,12 +268,7 @@ const Index = () => {
                       time-lapse imagery, scientific data, and climate impact
                       analysis.
                     </p>
-                    <div className="flex items-center justify-center gap-2 text-primary">
-                      <Mountain className="w-5 h-5" />
-                      <span className="font-medium">
-                        Choose a glacier to begin monitoring
-                      </span>
-                    </div>
+                    <div className="flex items-center justify-center gap-2 text-primary"></div>
                   </CardContent>
                 </Card>
               </div>

@@ -32,12 +32,7 @@ const About = () => {
               research, and inspire collective action to protect our environment
               for future generations.
             </p>
-            <div className=" gap-x-5 flex justify-center  text-primary">
-              <Mountain className="w-5 h-5" />
-              <span className="font-medium">
-                Some Pictures Of Glacier Lakes Outbrust And Its Impact
-              </span>
-            </div>
+            <div className=" gap-x-5 flex justify-center  text-primary"></div>
           </CardContent>
         </Card>
       </div>

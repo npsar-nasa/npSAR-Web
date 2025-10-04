@@ -29,12 +29,7 @@ const News = () => {
               preserving a record for future generations. It aims to educate,
               engage, and inspire action toward protecting our planet.
             </p>
-            <div className=" gap-x-5 flex justify-center  text-primary">
-              <Mountain className="w-5 h-5" />
-              <span className="font-medium">
-                Some Pictures Of Glacier Lakes Outbrust And Its Impact
-              </span>
-            </div>
+            <div className=" gap-x-5 flex justify-center  text-primary"></div>
             <img src={indxdtl} className="w-auto h-auto  pt-6" />
             <label htmlFor="">Source: The Kathmandu Post</label>
           </CardContent>
