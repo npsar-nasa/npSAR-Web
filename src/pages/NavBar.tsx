@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo and Name */}
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Mountain color="#129900" />
           <span className="self-center text-2xl text-green-800 font-semibold whitespace-nowrap dark:text-white">
             Nepal's Glacier Lake
