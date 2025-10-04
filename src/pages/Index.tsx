@@ -213,7 +213,7 @@ const Index = () => {
 
               {/* extra part */}
               <div className=" text-center">
-                <Card className="max-w-3xl mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
+                <Card className="max-w-4xl mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
                   <CardContent className="p-8">
                     <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
                       End Goal
@@ -235,30 +235,9 @@ const Index = () => {
               </div>
 
               {/* //forquiz Section */}
-              <div className="mt-10 text-center pb-5">
-                <Card className="max-w-2xl mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
-                  <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-                      Let's Play Some Fun Quiz About These Glacier Lakes
-                    </h2>
-                    <p className="text-muted-foreground mb-6">
-                      You will be given 10 questions about glacier facts. Try
-                      your best to answer all of them correctly.{" "}
-                    </p>
-                    <div className="flex items-center justify-center gap-2 text-primary">
-                      <button
-                        className=" bg-green-800 border-green-800 hover:bg-green-950 rounded-sm px-4 py-1 text-white"
-                        onClick={() => Navigate("/quiz")}
-                      >
-                        Start Quiz
-                      </button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
 
               <div className="mt-10 text-center pb-5">
-                <Card className="max-w-xl mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
+                <Card className="max-w-4xl mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
                   <CardContent className="p-8">
                     <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
                       Start Exploring
