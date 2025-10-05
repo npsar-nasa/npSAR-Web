@@ -72,7 +72,7 @@ const About = () => {
             </div>
             <a href="https://github.com/npsar-nasa">
               {" "}
-              <span className="text-green-800 text-2xl font-medium underline">
+              <span className="text-green-800 pt-3 text-2xl font-medium underline">
                 Github
               </span>
             </a>
