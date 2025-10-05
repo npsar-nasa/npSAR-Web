@@ -65,7 +65,8 @@ const About = () => {
               TypeScript, <br />
               Tailwind CSS Backend: Node.js, Express.js <br />
               Database and Storage: Supabase (PostgreSQL) <br />
-              Mapping: OpenLayers or Leaflet Version Control: Git and GitHub
+              Mapping: OpenStreetMap <br />
+              Version Control: Git and GitHub
             </p>
             <div className=" gap-x-5 flex justify-center text-primary">
               <img src={arc1} className="max-w-[30%]" />
