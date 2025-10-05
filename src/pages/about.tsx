@@ -5,6 +5,10 @@ import Navbar from "./NavBar";
 import dude from "../assets/dude.jpg";
 import pawan from "../assets/pawan.jpg";
 import satish from "../assets/satish.jpg";
+import picture1 from "../assets/Picture1.png";
+import picture2 from "../assets/Picture2.png";
+import picture3 from "../assets/Picture3.png";
+import picture4 from "../assets/Picture4.png";
 {
   /* <button
         className=" bg-green-800 border-green-800 m-4 hover:bg-green-950 rounded-sm  px-4 py-1 text-white"
@@ -108,60 +112,57 @@ const About = () => {
         <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
           <CardContent className="p-8">
             <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-              Objective
+              CNN Lake Detection Model
             </h2>
             <p className="text-muted-foreground mb-6 text-justify">
-              To develop an automated SAR-based monitoring system that: Tracks
-              expansion and contraction cycles of key glacial lakes. Detects
-              patterns that may indicate potential dam failure or GLOF risk.
-              Enables early warning and data-driven prevention strategies for
-              vulnerable downstream regions. Scientific Foundation Greenhouse
-              effects and rising global temperatures directly increase the
-              meltwater inflow into glacial lakes, stressing natural dams and
-              elevating GLOF risks. Synthetic Aperture Radar (SAR) enables
-              reliable monitoring under all weather conditions by using
-              microwave signals that penetrate cloud and snow layers.
-              Radiometric Terrain Correction (RTC) and speckle filtering are
-              essential preprocessing steps to correct SAR’s geometric
-              distortions and remove noise before analysis. Approach and
-              Methodology Data Acquisition Utilized Sentinel-1A/B SAR data from
-              NASA’s Alaska Satellite Facility (ASF). Queried and downloaded
-              Ground Range Detected (GRD) products using the asf_search API for
-              five selected glacial lakes (Tsho Rolpa, Tilicho, Imja, Gokyo,
-              Chamlang). Target time window: 2021–2025. Preprocessing Used
-              NASA’s HyP3 platform for: Radiometric Terrain Correction (RTC)
-              Speckle filtering Noise reduction Cropped the preprocessed
-              products to lake-specific GeoJSON polygons. Additional cleanup
-              steps included padding and normalization. Dataset Preparation
-              Generated ~300 SAR image patches for the five selected lakes.
-              Annotated glacial lake boundaries manually in QGIS to create
-              segmentation masks. Evaluated between generalist vs. specialist
-              model approaches — opted for the latter for higher accuracy per
-              lake. Model Training Created ~ 250–300 image-mask pairs (one per
-              lake). Performed data augmentation and batch loading for training
-              efficiency. Trained a CNN model using EfficientNet-B2 backbone
-              (10M parameters) pre-trained on ImageNet. Achieved strong
-              segmentation performance specialized for our 5 target lakes.
-              Results Successfully built a deep-learning-powered segmentation
-              model that accurately identifies glacial lake boundaries from SAR
-              imagery. The pipeline from raw SAR download to final segmentation
-              mask is fully automated in Python. Achieved high IoU and pixel
-              accuracy (quantitative metrics can be added after validation).
-              Demonstrated feasibility for large-scale, low-cost, continuous
-              monitoring of Himalayan glacial lakes. Technologies and Tools Data
-              Sources: NASA ASF Sentinel-1 GRD, HyP3 platform Programming &
-              Libraries: Python, Rasterio, GDAL, NumPy, ASF, HyP3 SDK Annotation
-              & GIS: QGIS Deep Learning Framework: EfficientNet-B2 (CNN
-              architecture with ImageNet weights) Other Tools: Google Colab,
-              Anaconda, Visual Studio Code Impact and Future Work Establish a
-              standardized monitoring framework for all major glacial lakes in
-              Nepal. Integrate time-series analysis to forecast lake volume
-              fluctuations and potential GLOF risk levels. Develop a public
-              dashboard to visualize monitored lakes and issue automated early
-              warnings using live satellite data. Extend model generalization to
-              cover the entire Himalayan belt through transfer learning and
-              continuous dataset expansion.
+              Our Lake Detection Model is a deep learning-based system designed
+              for high-precision water body segmentation in SAR (Synthetic
+              Aperture Radar) imagery. Leveraging a U-Net/DeepLabV3+
+              architecture with an EfficientNet-B3 backbone, the model performs
+              binary segmentation to distinguish water from non-water regions
+              across complex glacial landscapes. <br /> Features: <br /> - The
+              model was trained on 244 matched image-mask pairs, covering
+              multiple glacial lakes, including Chamlang Tsho, Gokyo Tsho, and
+              Imja Tsho areas. Images were preprocessed to a size of 256×256
+              pixels and standardized as torch.float32. <br />- We employed a
+              custom LakeDetectionLoss, combining BCE, Dice, and Focal Loss,
+              optimized with AdamW. The model was trained for 40 epochs with a
+              batch size of 32 and an initial learning rate of 0.0001 on
+              CUDA-enabled GPU.
+              <br /> - The model achieved best validation IoU of 0.9130, with
+              consistent improvement across epochs. Training and validation loss
+              curves, along with IoU trends, demonstrate stable convergence and
+              minimal overfitting.
             </p>
+            <div className=" gap-x-5 flex justify-center text-primary">
+              <img src={picture1} className="max-w-[300px] max-h-[300px]" />
+              <img src={picture2} className="max-w-[3000px] max-h-[300px]" />
+              <img src={picture3} className="max-w-[300px] max-h-[300px]" />
+            </div>
+            <p className="text-muted-foreground mb-6 text-justify">
+              Training Insights: <br /> - Rapid initial improvement in IoU
+              during the first 10 epochs, followed by gradual fine-tuning in
+              later epochs.
+              <br />- Validation IoU stabilized above 0.90 from epoch 19 onward,
+              highlighting robust generalization across unseen lake imagery.
+            </p>
+            <div className=" gap-x-5 flex justify-center text-primary">
+              <img src={picture4} className="max-w-[700px] max-h-[700px]" />
+            </div>
+            <p className="text-muted-foreground mb-6 text-justify">
+              - Effective handling of images with missing masks by excluding
+              unmatched samples from training.
+              <br />
+              &nbsp;Further Improvements:
+              <br /> - Increase in number of patches per lake. <br />- Using
+              backbones already familiar with single channel SAR imagery.
+            </p>
+            <a href="https://github.com/npsar-nasa/npSAR-dl">
+              {" "}
+              <span className="text-blue-700 text-2xl font-medium underline">
+                Github
+              </span>
+            </a>
           </CardContent>
         </Card>
         <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
@@ -185,6 +186,12 @@ const About = () => {
               Database and Storage: Supabase (PostgreSQL) <br />
               Mapping: OpenLayers or Leaflet Version Control: Git and GitHub
             </p>
+            <a href="https://github.com/npsar-nasa">
+              {" "}
+              <span className="text-blue-700 text-2xl font-medium underline">
+                Github
+              </span>
+            </a>
           </CardContent>
         </Card>
       </div>

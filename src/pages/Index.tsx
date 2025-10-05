@@ -188,7 +188,7 @@ const Index = () => {
               </div>
 
               <div className=" text-center pb-10">
-                <Card className="max-w-[850px] mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
+                <Card className="max-w-[900px] mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
                   <CardContent className="p-8">
                     <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
                       How We Executed This.
