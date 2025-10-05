@@ -206,7 +206,11 @@ const Index = () => {
                       year-by-year slider (2015–2025), showing model outputs and
                       highlighting temporal changes in lake boundaries.
                     </p>
-                    <div className=" gap-x-5 flex justify-center  text-primary"></div>
+                    <div className=" gap-x-5 flex justify-center text-xl underline  text-primary">
+                      <button onClick={() => Navigate("/about")}>
+                        Learn More
+                      </button>
+                    </div>
                   </CardContent>
                 </Card>
               </div>

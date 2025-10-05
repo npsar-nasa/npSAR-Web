@@ -25,71 +25,6 @@ const About = () => {
       <Navbar></Navbar>
 
       <div className=" text-center mt-10">
-        <Card className="max-w-6xl  mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
-          <CardContent className="p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-              About Us
-            </h2>
-            <p className="text-muted-foreground mb-6 text-justify">
-              Greetings, we are 3 passionate students from Nepal who love
-              understanding space technology, AI, and natural processes. We live
-              in a country with the high Himalayas, where we witnessed floods
-              and landslides triggered by melting glaciers and steep
-              terrains—disasters that cost hundreds of casualties each year.
-              Experiencing these problems, we tend to understand this better
-              through SAR images by building the AI model. Our goal is to make
-              glacier research faster, clearer, and more accessible and to reach
-              out to the policymakers to act on climate change as soon as
-              possible.
-            </p>
-
-            <div className=" gap-x-5 flex justify-center text-primary">
-              <img src={dude} className="max-w-[250px] max-h-[250px]" />
-              <img src={pawan} className="max-w-[250px] max-h-[250px]" />
-              <img src={satish} className="max-w-[250px] max-h-[250px]" />
-            </div>
-          </CardContent>
-        </Card>
-        <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
-          <CardContent className="p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-              About The Challanges
-            </h2>
-            <p className="text-muted-foreground mb-6 text-justify">
-              Like Alice in Wonderland, let’s travel down the rabbit hole to
-              reveal a world that looks like our planet Earth… but not quite!
-              Using synthetic aperture radar (SAR), we can image the world by
-              emitting radar pulses toward Earth and recording the energy that
-              is reflected back after the signals interact with Earth's surface.
-              Your challenge is to download multi-frequency or
-              multi-polarization SAR data for an interesting study area of your
-              choice e.g., your hometown, a tropical wetland, ice sheet, forest
-              wildfire, flooded neighborhood, volcano eruption, etc.—and use
-              that data to develop hypotheses about the physical drivers
-              operating there.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
-          <CardContent className="p-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-              Project Summary
-            </h2>
-            <p className="text-muted-foreground mb-6 text-justify">
-              Nepal faces frequent floods, many triggered by Glacial Lake
-              Outburst Floods (GLOFs) caused by sudden failures in glacial lake
-              dams. With the Himalayas’ harsh terrain and unpredictable climate,
-              on-site monitoring of these lakes is nearly impossible. Our
-              project leverages NASA’s Sentinel-1 SAR satellite data and
-              AI-based analysis to track glacial lake expansion and identify
-              early indicators of potential GLOFs. By combining remote sensing,
-              automated preprocessing, and deep learning, we aim to provide a
-              scalable, efficient solution for GLOF risk monitoring across
-              Nepal’s vulnerable Himalayan regions.
-            </p>
-          </CardContent>
-        </Card>
         <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
           <CardContent className="p-8">
             <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
@@ -106,6 +41,35 @@ const About = () => {
               due to the extreme geography, weather, and limited accessibility
               of Himalayan terrains.
             </p>
+          </CardContent>
+        </Card>
+        <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
+          <CardContent className="p-8">
+            <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
+              What We Came Up
+            </h2>
+            <p className="text-muted-foreground mb-6 text-justify">
+              The Glacier Monitoring System is a web-based application that
+              tracks and visualizes changes in glacier lakes over the past
+              decade. It allows users to compare satellite images from different
+              years through an interactive slider, helping to analyze glacier
+              retreat, growth, and potential risks related to climate change.
+              Key Features: Displays glacier and lake information such as name,
+              region, elevation, and area. Provides year-by-year satellite image
+              comparison using a slider. Includes search and filter options for
+              easy data access. Highlights potential glacial lake outburst flood
+              (GLOF) risks. <br /> Technologies Used: <br /> Frontend: React,
+              TypeScript, <br />
+              Tailwind CSS Backend: Node.js, Express.js <br />
+              Database and Storage: Supabase (PostgreSQL) <br />
+              Mapping: OpenLayers or Leaflet Version Control: Git and GitHub
+            </p>
+            <a href="https://github.com/npsar-nasa">
+              {" "}
+              <span className="text-green-800 text-2xl font-medium underline">
+                Github
+              </span>
+            </a>
           </CardContent>
         </Card>
 
@@ -159,7 +123,7 @@ const About = () => {
             </p>
             <a href="https://github.com/npsar-nasa/npSAR-dl">
               {" "}
-              <span className="text-blue-700 text-2xl font-medium underline">
+              <span className="text-green-800 text-2xl font-medium underline">
                 Github
               </span>
             </a>
@@ -168,30 +132,54 @@ const About = () => {
         <Card className="max-w-6xl mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
           <CardContent className="p-8">
             <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
-              What We Came Up
+              Project Summary
             </h2>
             <p className="text-muted-foreground mb-6 text-justify">
-              The Glacier Monitoring System is a web-based application that
-              tracks and visualizes changes in glacier lakes over the past
-              decade. It allows users to compare satellite images from different
-              years through an interactive slider, helping to analyze glacier
-              retreat, growth, and potential risks related to climate change.
-              Key Features: Displays glacier and lake information such as name,
-              region, elevation, and area. Provides year-by-year satellite image
-              comparison using a slider. Includes search and filter options for
-              easy data access. Highlights potential glacial lake outburst flood
-              (GLOF) risks. <br /> Technologies Used: <br /> Frontend: React,
-              TypeScript, <br />
-              Tailwind CSS Backend: Node.js, Express.js <br />
-              Database and Storage: Supabase (PostgreSQL) <br />
-              Mapping: OpenLayers or Leaflet Version Control: Git and GitHub
+              Nepal faces frequent floods, many triggered by Glacial Lake
+              Outburst Floods (GLOFs) caused by sudden failures in glacial lake
+              dams. With the Himalayas’ harsh terrain and unpredictable climate,
+              on-site monitoring of these lakes is nearly impossible. Our
+              project leverages NASA’s Sentinel-1 SAR satellite data and
+              AI-based analysis to track glacial lake expansion and identify
+              early indicators of potential GLOFs. By combining remote sensing,
+              automated preprocessing, and deep learning, we aim to provide a
+              scalable, efficient solution for GLOF risk monitoring across
+              Nepal’s vulnerable Himalayan regions.
             </p>
-            <a href="https://github.com/npsar-nasa">
-              {" "}
-              <span className="text-blue-700 text-2xl font-medium underline">
-                Github
-              </span>
-            </a>
+          </CardContent>
+        </Card>
+        <Card className="max-w-6xl  mb-10 mx-auto shadow-elegant bg-gradient-subtle border-primary/20">
+          <CardContent className="p-8">
+            <h2 className="text-2xl font-bold text-foreground mb-4 pt-3">
+              About Us
+            </h2>
+            <p className="text-muted-foreground mb-6 text-justify">
+              Greetings, we are 3 passionate students from Nepal who love
+              understanding space technology, AI, and natural processes. We live
+              in a country with the high Himalayas, where we witnessed floods
+              and landslides triggered by melting glaciers and steep
+              terrains—disasters that cost hundreds of casualties each year.
+              Experiencing these problems, we tend to understand this better
+              through SAR images by building the AI model. Our goal is to make
+              glacier research faster, clearer, and more accessible and to reach
+              out to the policymakers to act on climate change as soon as
+              possible.
+            </p>
+
+            <div className=" gap-x-5 flex justify-center text-primary">
+              <img
+                src={dude}
+                className="max-w-[250px] rounded-md max-h-[250px]"
+              />
+              <img
+                src={pawan}
+                className="max-w-[250px] rounded-md max-h-[250px]"
+              />
+              <img
+                src={satish}
+                className="max-w-[250px] rounded-md max-h-[250px]"
+              />
+            </div>
           </CardContent>
         </Card>
       </div>
