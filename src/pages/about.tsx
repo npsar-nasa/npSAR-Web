@@ -9,6 +9,9 @@ import picture1 from "../assets/Picture1.png";
 import picture2 from "../assets/Picture2.png";
 import picture3 from "../assets/Picture3.png";
 import picture4 from "../assets/Picture4.png";
+import arc1 from "../assets/arc1.png";
+import arc2 from "../assets/arc2.png";
+
 {
   /* <button
         className=" bg-green-800 border-green-800 m-4 hover:bg-green-950 rounded-sm  px-4 py-1 text-white"
@@ -64,6 +67,9 @@ const About = () => {
               Database and Storage: Supabase (PostgreSQL) <br />
               Mapping: OpenLayers or Leaflet Version Control: Git and GitHub
             </p>
+            <div className=" gap-x-5 flex justify-center text-primary">
+              <img src={arc1} className="max-w-[30%]" />
+            </div>
             <a href="https://github.com/npsar-nasa">
               {" "}
               <span className="text-green-800 text-2xl font-medium underline">
@@ -121,6 +127,9 @@ const About = () => {
               <br /> - Increase in number of patches per lake. <br />- Using
               backbones already familiar with single channel SAR imagery.
             </p>
+            <div className=" gap-x-5 flex justify-center text-primary">
+              <img src={arc2} className="w-[60%]" />
+            </div>
             <a href="https://github.com/npsar-nasa/npSAR-dl">
               {" "}
               <span className="text-green-800 text-2xl font-medium underline">
@@ -172,7 +181,10 @@ const About = () => {
                   src={dude}
                   className="max-w-[250px] rounded-md max-h-[250px]"
                 />
-                <a href="" className="font-medium text-lg underline">
+                <a
+                  href="https://www.linkedin.com/in/nischal-sharma-1b3967312/"
+                  className="font-medium text-lg underline"
+                >
                   Nischal
                 </a>
               </div>
@@ -181,7 +193,10 @@ const About = () => {
                   src={pawan}
                   className="max-w-[250px] rounded-md max-h-[250px]"
                 />
-                <a href="" className="font-medium underline text-lg">
+                <a
+                  href="l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpawanadhikari-ce%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExSmFEVEVNRVFGb3I1N0QydQEefVTeGRF9xIbq1h13_7-JqX4yqpTcZgPpemNK0qzAu-bo-eKHcLfSW7XJQVA_aem_0iQ1QH60Xj5Suc8KCieDhw&h=AT2sHWz1Bw9eu1qWBun1CSYiWQxxjAihuu9oZnYSRcZKSd5ycMGMviJ-5BEb1oaTvI9rGjHlJEF1e8w7w0XnGnIliXjWGWFLbXk3PiRCLluO478Pu3ayIOth78OCPwvb8nCS64PRL6h1oyTpUIocMA"
+                  className="font-medium underline text-lg"
+                >
                   Pawan
                 </a>
               </div>
@@ -190,7 +205,10 @@ const About = () => {
                   src={satish}
                   className="max-w-[250px] rounded-md max-h-[250px]"
                 />
-                <a href="" className="font-medium  underline text-lg">
+                <a
+                  href="https://www.linkedin.com/in/satish-regmi-206a39312/"
+                  className="font-medium  underline text-lg"
+                >
                   Satish
                 </a>
               </div>
