@@ -167,18 +167,33 @@ const About = () => {
             </p>
 
             <div className=" gap-x-5 flex justify-center text-primary">
-              <img
-                src={dude}
-                className="max-w-[250px] rounded-md max-h-[250px]"
-              />
-              <img
-                src={pawan}
-                className="max-w-[250px] rounded-md max-h-[250px]"
-              />
-              <img
-                src={satish}
-                className="max-w-[250px] rounded-md max-h-[250px]"
-              />
+              <div className="">
+                <img
+                  src={dude}
+                  className="max-w-[250px] rounded-md max-h-[250px]"
+                />
+                <a href="" className="font-medium text-lg underline">
+                  Nischal
+                </a>
+              </div>
+              <div>
+                <img
+                  src={pawan}
+                  className="max-w-[250px] rounded-md max-h-[250px]"
+                />
+                <a href="" className="font-medium underline text-lg">
+                  Pawan
+                </a>
+              </div>
+              <div>
+                <img
+                  src={satish}
+                  className="max-w-[250px] rounded-md max-h-[250px]"
+                />
+                <a href="" className="font-medium  underline text-lg">
+                  Satish
+                </a>
+              </div>
             </div>
           </CardContent>
         </Card>
